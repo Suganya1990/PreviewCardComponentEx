@@ -33,6 +33,8 @@ h2 {
   padding: 3em;
 }
 .carItem__sedan {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   background-color: hsl(31, 77%, 52%);
 }
 .carItem__img {
@@ -72,4 +74,29 @@ h2 {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (min-width: 375px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .itemContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+  }
+  .carItem__sedan {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .carItem__luxury {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
 }
